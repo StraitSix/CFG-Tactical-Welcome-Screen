@@ -11,7 +11,8 @@
 <tab>
   <label>🐞 Known Bugs</label>
   <content>
-    <h1>Known Bugs</h1>
+    <h1>Known Bugs</h1><br>
+    Bug with weapon/loadout not loading - We are working to figure out what is causing this issue. 
   </content>
 </tab>
 <script>
