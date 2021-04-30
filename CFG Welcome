@@ -3,7 +3,7 @@
   <content>
     <h1>Server Info</h1>
     Welcome to the official CFG Tactical Server. This server is a work in progress but for now we are at a point where we feel we do want to bring it to the community! <br>
-    If you would like to join us on our discord please feel free to join <a onclick='window.open("https://discord.gg/Bkyr2UvJUb", "", "width=700,height=400");'><strong>here</strong></a>! <br>
+    If you would like to join us on our discord please feel free to join <a href="https://discord.gg/Bkyr2UvJUb" target="_blank"'><strong>here</strong></a>! <br>
     If you do run into any bugs at all please reach out to me directly or in our discord server as well. Thank you all and have fun! 
   </content>
 </tab>
@@ -14,9 +14,3 @@
     <h1>Known Bugs</h1>
   </content>
 </tab>
-
-<style>
-a:hover{
-    cursor: pointer;
-}
-</style>
