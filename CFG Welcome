@@ -2,29 +2,27 @@
   <label>💻 Server Info</label>
   <content>
     <h1>Server Info</h1>
-    Welcome to the official CFG Tactical Server. This server is a work in progress but for now we are at a point where we feel we do want to bring it to the community! <br>
-    If you would like to join us on our discord please feel free to join <a onclick="OpenDiscordInvite()"><strong>here</strong></a>! <br>
-    If you do run into any bugs at all please reach out to me directly or in our discord server as well. Thank you all and have fun! 
+    <p>Welcome to the official CFG Tactical Server. This server is a work in progress but for now we are at a point where we feel we do want to bring it to the community!</p>
+    <p>
+		If you would like to join us on our discord please feel free to join!
+		<br>
+		<input id="linkTextBox" type="text" readonly="" value="https://discord.gg/Bkyr2UvJUb" />
+		<button onclick="CopyLink()">Copy</button>
+	</p>
+    <p>If you do run into any bugs at all please reach out to me directly or in our discord server as well. Thank you all and have fun!</p> 
   </content>
 </tab>
       
 <tab>
   <label>🐞 Known Bugs</label>
   <content>
-    <h1>Known Bugs</h1><br>
-    Bug with weapon/loadout not loading - We are working to figure out what is causing this issue. 
+    <h1>Known Bugs</h1>
   </content>
 </tab>
 <script>
-function() OpenDiscordInvite(){
-	var ports = Array.from({length: 10}, (x,i) => i + 6463)
-	for(let p in ports){
-		let ws = new WebSocket("ws://127.0.0.1:" + ports[p] +  "/?v=1");
-		ws.onopen = function() {
-			if(ws.readyState != WebSocket.OPEN) return;
-			ws.send(`{"cmd":"INVITE_BROWSER","args":{"code":"Bkyr2UvJUb"},"nonce":"invite"}`)
-		}
+	function CopyLink(){
+		var textBox = document.getElementById("linkTextBox");
+		textBox.select();
+		document.execCommand("copy");
 	}
-}
-
 </script>
